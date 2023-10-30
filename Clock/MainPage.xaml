@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clock.MainPage" Loaded="ContentPage_Loaded">
+
+    <Grid>
+        <Label Text="Текущее время" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,0,90" FontSize="30"></Label>
+        <Label x:Name="TimeLB" Text="00.00.00" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="50"></Label>
+    </Grid>
+
+</ContentPage>

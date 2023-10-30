@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clock.Alarm"
+             Title="Будильник" Loaded="ContentPage_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TimePicker x:Name="AlaramTime" Grid.Row="0" HorizontalOptions="CenterAndExpand" FontSize="50"></TimePicker>
+
+        <CheckBox x:Name="MondayCB" Grid.Row="1"></CheckBox>
+        <CheckBox x:Name="TuesdayCB" Grid.Row="2"></CheckBox>
+        <CheckBox x:Name="WednesdayCB" Grid.Row="3"></CheckBox>
+        <CheckBox x:Name="ThursdayCB" Grid.Row="4"></CheckBox>
+        <CheckBox x:Name="FridayCB" Grid.Row="5"></CheckBox>
+        <CheckBox x:Name="SaturdayCB" Grid.Row="6"></CheckBox>
+        <CheckBox x:Name="SundayCB" Grid.Row="7"></CheckBox>
+        <Label Text="Понедельник" Grid.Row="1"></Label>
+        <Label Text="Вторник" Grid.Row="2"></Label>
+        <Label Text="Среда" Grid.Row="3"></Label>
+        <Label Text="Четверг" Grid.Row="4"></Label>
+        <Label Text="Пятница" Grid.Row="5"></Label>
+        <Label Text="Суббота" Grid.Row="6"></Label>
+        <Label Text="Воскресенье" Grid.Row="7"></Label>
+       
+        <Button CornerRadius="20" x:Name="AlarmBT" Text="Создать Будильник" Grid.Row="8" Margin="0,0,0,15" Clicked="AlarmBT_Clicked" ></Button>
+        <Button CornerRadius="20" x:Name="CancelBT" Text="Отмена" Grid.Row="9" Margin="0,0,0,15" Clicked="CancelBT_Clicked"></Button>
+    </Grid>
+</ContentPage>
